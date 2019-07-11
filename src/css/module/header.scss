@@ -1,0 +1,157 @@
+$padding : (0 0 0 13px)(0 13px 0 0)(0 13px 0 13px);
+
+header{
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  // 头部详细信息
+  .lol-hd-top {
+    width: 100%;
+    height: 75px;
+    background-color: #090909;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    .lol-hd-logo {
+      
+      margin: {
+        top: 18px;
+        left: 50px;
+      };
+    }
+    .lol-hd-login {
+      margin-right: 34px;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 14px;
+        li{
+          height: 75px;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 75px;
+            span{
+              display: inline-block;
+              height: 27px;
+             line-height: 27px;vertical-align: middle;
+            }
+            
+          }
+        }
+        li:nth-of-type(1){
+          span{
+            padding: nth($padding,3);
+          }
+        }
+        li:nth-of-type(2){
+          
+          .lol-hd-buy-icon{
+            padding: nth($padding,1);
+            i{
+              font-size: 27px;
+            }
+          }
+          .lol-buy-number{
+            padding: nth($padding,2);
+            width: 10px;
+            height: 20px;
+            border-radius: 90%;
+            background-color:#fa4f17;
+            margin-bottom: 10px;
+            line-height: 20px;
+            text-align: center;
+            color: white;
+          }
+          
+        };
+        li:nth-of-type(3){
+          .lol-hd-ask-icon{
+            padding: nth($padding,1);
+            i{
+              font-size: 27px;
+            }
+          }
+          .lol-hd-up{
+            padding: nth($padding,2);
+          }
+          .lol-hd-down{
+            padding: nth($padding,2);
+          }
+        };
+        li:nth-of-type(4){
+          .lol-hd-code-icon{
+            padding: nth($padding,1);
+            i{
+              font-size: 22px;
+            }
+          }
+        }
+        a {
+          color: #a2a2a2;
+        }
+      }
+    }
+  }
+  // 底部列表框
+  .lol-hd-bottom{
+    width: 100%;
+    height: 45px;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    ul{
+      display: flex;
+      justify-content: flex-start;
+      width: 850px;
+      height: 45px;
+      margin-left: 15px;
+      a{
+        color: #fff;
+        font-size: 17px;
+        &:hover{
+          color: orange;
+        }
+      }
+      li{
+        height: 45px;
+        line-height: 45px;
+        padding : 0 25px;
+      }
+    }
+    .lol-hd-search{
+      width: 285px;
+      height: 30px;
+      margin-top: 8px;
+      margin-right: 35px;
+      border: 1px solid #777777;
+      display: flex;
+      justify-content: space-between;
+      input{
+        width: 239px;
+        height: 28px;
+        background-color: #202020;
+        padding-left: 6px;
+        border: none;
+        outline: none;
+        color: white;
+      }
+      span{
+        display: inline-block;
+        width: 45px;
+        height: 30px;
+        background-color: #fa4f17;
+        text-align: center;
+        line-height: 30px;
+        i{
+          font-size: 21px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

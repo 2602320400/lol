@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车 英雄联盟周边商城</title>
+    <link rel="icon" href="http://localhost:1997/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="http://localhost:1997/css/index.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:1997/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:1997/libs/font_1263314_ys4lv1po5gf/iconfont.css">
+</head>
+<body>
+    <header></header>
+        <div class="shop_buy">
+            <div class="shop_left">
+                <div class="shop_left_top">
+                        <!-- 商品信息 -->
+                    <ul class="ul_">
+                            <li class="li_qs"><input class="li_qs_input" type="checkbox">全选</li>
+                            <li class="li_dj">商品</li>
+                            <li class="li_sp">单价(元)</li>
+                            <li class="li_sl">数量</li>
+                            <li class="li_jg">小计</li>
+                            <li class="li_zz">操作</li>
+                    </ul>
+
+                        <!-- 购物商品信息 -->
+                    <ul class="ul-" id="ul-shop">
+                        
+                    </ul>
+
+                    <script type="text/html" id="template-cart">
+                        {{each cart data}}
+                        <div class="shop-id" data-id="{{data.id}}">
+                        <li class="li-inp"><input class="check" type="checkbox" {{data.check ? 'checked' : ''}}></li>
+                        <li class="li-sp">
+                            <div><a href="javascript:;"><img src="{{data.images[0]}}"></a>
+                                
+                            </div>
+                            <span>{{data.title}}</span>
+                        </li>
+                        <li class="li-dj">
+                            <span>{{data.price}}</span>
+                        </li>
+                        <li class="li-sl">
+                            <div class="xiangq_">
+                                <span class="num_">
+                                    <a class="xiangq_a">-</a>
+                                </span>
+                                <span>
+                                    <input type="text" value="{{data.num}}" id="input_">
+                                </span>
+                                <span>
+                                    <a class="xiangq_b">+</a>
+                                </span>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="li-jg">
+                            <span>￥{{(data.num*data.price).toFixed(2)}}</span>
+                        </li>
+                        <li class="li-zz"><a href="#"><span id="delite">删除</span></a></li>
+                    </div>
+                    {{/each}}
+                    </script>
+
+                </div>
+                <div class="shop_left_bottom"></div>
+            </div>
+
+            <!-- 结算定位 -->
+            <div class="shop_right">
+                <div class="icon"><a>我的购物车</a></div>
+                
+                <div class="js"><span>商品数量：<a id="cz-sp-checkedNumber">1</a></span><span>商品金额：￥<a id="heji"></a></span></div>
+
+                <div class="js_"><i class="iconfont icon-tubiaolunkuo-"></i><a>去结算</a></div>
+                <ul class="ul">
+                    <li>7天无理由退换货</li>
+                    <li>100%官方正品</li>
+                    <li>全场每单满199元包邮</li>
+                </ul>
+                <img src="http://localhost:1997/img/wxcode.png" alt="">
+            </div>
+            <!-- 结算定位 -->
+
+        </div>
+        <!-- 下带 -->
+        <aside></aside>
+    <footer></footer>
+    <script src="http://localhost:1997/libs/require/require.js" data-main="http://localhost:1997/js/shop.js"></script>
+</body>
+</html>

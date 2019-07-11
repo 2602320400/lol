@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOL 英雄联盟周边商城</title>
+    <link rel="icon" href="http://localhost:1997/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/list.css">
+    <link rel="stylesheet" type="text/css" href="../libs/font_1263314_ys4lv1po5gf/iconfont.css">
+</head>
+<body>
+    <header></header>
+    <div class="mean">
+        <div id="list-head">
+            <div></div>
+            <p><a href="http://localhost:1997">首页商城</a></p><p>></p><p>雕塑手办</p>
+            <img src="../img/list.jpg">
+        </div>
+        <div id ="list-under" class="list-under">
+            <div id="list-under-left" class="list-under-left">
+                    <h3>雕塑手办</h3>
+                    <ul>
+                     <li><a>大型雕塑</a></li>
+                     <li><a>中型雕塑</a></li>
+                     <li><a>手办</a></li>
+                     <li><a>限定</a></li>
+                     <li><a>迷你手办</a></li>
+                    </ul>  
+                    <h3>价格</h3>
+                    <ul>
+                     <li><a>苹果</a></li>
+                     <li><a>香蕉</a></li>
+                     <li><a>柠檬</a></li>
+                     <li><a>桔子</a></li>
+                    </ul>  
+                    <h3>英雄</h3>
+                    <ul>
+                     <li><a>苹果</a></li>
+                     <li><a>香蕉</a></li>
+                     <li><a>柠檬</a></li>
+                     <li><a>桔子</a></li>
+                    </ul>  
+                    
+            </div>
+            <div id="list-under-right" class="list-under-right">
+
+                <div class="imgs">
+                    
+                </div>
+
+                <script type="text/html" id="list-template">
+                    {{each list item}}
+                            <div class = "imgdiv" data-id='{{item.id}}'> 
+                            <a href="http://localhost:1997/html/detalis.html?id={{item.id}}" target="_blank">
+                            <img src="{{item.image}}">
+                            <p>{{item.title}}</p>
+                            <p class="p2">￥{{item.price}}</p>
+                            </a>
+                            </div>
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="http://localhost:1997/libs/require/require.js" data-main="http://localhost:1997/js/list.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+aside{
+    display: block;
+    width: 100%;
+    min-height: 193px;
+    height: auto;
+    // vertical-align: bottom;
+    li{
+        width: 25%;
+        float: left;
+        min-height: 193px;
+        height: auto;
+        text-align: center;
+        zoom: 1;
+        img{
+            display: block;
+            width: 100%;
+            min-height: 193px;
+            height: auto;
+            // vertical-align: bottom;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
+    }
+}

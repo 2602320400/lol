@@ -1,0 +1,120 @@
+footer{
+  
+  width: 100%;
+  height: 402px;
+  float: left;
+  .lol-bt-sale{
+    width: 1190px;
+    margin: 0 auto;
+    height: 70px;
+    padding-top: 28px;
+    ul{
+      width: 940px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        span{
+          display: inline-block;
+          width: 38px;
+          height: 38px;
+          border-radius: 19px;
+          background-color: red;
+          color: #FFFFFF;
+          font-size: 25px;
+          line-height: 38px;
+          text-align: center;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
+        a {
+          display: inline-block;
+          height: 38px;
+          line-height: 52px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .lol-bt-top{
+    width: 100%;
+    height: 188px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-evenly;
+    ul{
+      margin-top: 25px;
+      h5{
+        font-size: 16px;
+        line-height: 30px;
+        color: #222;
+      }
+      li{
+        a{
+          text-indent: 10px;
+          font-size: 12px;
+          color: #666;
+          display: block;
+          line-height: 28px;
+        }
+        a:hover{
+          text-decoration: underline;
+          color: black;
+        }
+      }
+    }
+  }
+  .lol-bt-bottom{
+    height: 108px;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top-style:outset;
+    .lol-ft-about{
+      width: 350px;
+      height: 50px;
+      margin: 0 auto; 
+      ul li{
+        float: left;
+        padding: 0 15px;
+        border-bottom-style:outset;
+        opacity: 0.8;
+        margin: 10px auto;
+        a{
+          text-align: center;
+          height: 50px;
+          font-size: 12px;
+          color: #666;
+          
+          
+        }
+        :hover{
+          text-decoration: underline; 
+          
+          color: black;
+        }
+      }
+    }
+
+    .lol-ft-version{
+      width: 100%;
+      height: 94px;
+      margin: 10px auto;
+      .lol-ft-logo{
+        width: 300px;
+        height: 93px;
+        float: left;
+        margin-left: 23%;   
+      }
+      .lol-ft-detail{
+        width: 600px;
+        height: 93px;
+        float: left;
+        p{
+          font-size: 12px;
+          opacity: .8;
+        }
+      }
+    }
+  }
+
+}
